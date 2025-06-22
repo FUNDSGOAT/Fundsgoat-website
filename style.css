@@ -1,0 +1,40 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+header {
+    text-align: center;
+    background: #003300;
+    color: gold;
+    padding: 2em;
+}
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 1em;
+}
+section {
+    padding: 1em 2em;
+}
+.samples div {
+    margin-bottom: 1em;
+}
+.samples img {
+    max-width: 100%;
+    height: auto;
+}
+.consultation form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+footer {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+}
