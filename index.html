@@ -1,47 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get approved for housing with verified Snappt documents, paystubs, and eviction removal help. Fundsgoat Approval Services helps renters in all 50 states." />
+    <meta name="keywords" content="eviction removal help, Snappt paystubs, pass Nova Credit, rental approval with bad credit, verified documents, fundsgoat approval" />
     <title>Fundsgoat Approval Services</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <h1>Welcome to Fundsgoat Approval Services</h1>
-        <p>We help you get approved for apartments, cars, loans, and more!</p>
-        <div class="contact-links">
-            <p>📱 TikTok: <a href="https://www.tiktok.com/@fundsgoat_approvals" target="_blank">@fundsgoat_approvals</a></p>
-            <p>💬 Telegram: <a href="https://t.me/Fundsgoat_Approvals" target="_blank">@Fundsgoat_Approvals</a></p>
-            <p>📧 Email: <a href="mailto:fundsgoatapprovalservices@gmail.com">fundsgoatapprovalservices@gmail.com</a></p>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#eviction-help">Eviction Help</a></li>
+                <li><a href="#consultation">Consultation</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="verified-info">
-            <h2>Verified Documents</h2>
-            <p>Our paystubs, offer letters, and bank statements are verified and pass systems like Snappt, Nova Credit, and Approved Shield.</p>
-        </section>
+    <section id="home" class="hero">
+        <h1>Fundsgoat Approval Services</h1>
+        <p>We help you get approved in all 50 states — even with evictions or bad credit.</p>
+    </section>
 
-        <section class="consultation">
-            <h2>Request a Consultation</h2>
-            <form action="mailto:fundsgoatapprovalservices@gmail.com" method="POST" enctype="text/plain">
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="Full Name" required>
+    <section id="services">
+        <h2>Get Approved — Even with Evictions or Bad Credit</h2>
+        <ul>
+            <li>✅ Snappt-approved paystubs, offer letters, and bank statements</li>
+            <li>✅ Eviction removal and credit dispute guidance</li>
+            <li>✅ Documents that pass Nova Credit, Approved Shield, and more</li>
+            <li>✅ Fast turnaround with real proof and approval strategies</li>
+        </ul>
+    </section>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="Email" required>
+    <section id="eviction-help">
+        <h2>Eviction Removal Help</h2>
+        <p>An eviction can stay on your record and ruin rental chances — but it doesn’t have to. We help remove or work around eviction-related credit issues.</p>
+        <ul>
+            <li>📌 Dispute and remove eviction entries from your report</li>
+            <li>📌 Provide verified rental documents for fast approval</li>
+            <li>📌 Advice for passing Snappt, Nova Credit, and others</li>
+        </ul>
+    </section>
 
-                <label for="details">Where do you want to apply to?</label>
-                <textarea id="details" name="Application Details" required></textarea>
+    <section id="consultation">
+        <h2>Free Consultation Form</h2>
+        <form action="mailto:fundsgoatapprovalservices@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="Name" required />
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required />
+
+            <label for="service">What service do you need?</label>
+            <textarea id="service" name="Service Details" rows="4" required></textarea>
+
+            <label for="location">Where do you need approval (city/state)?</label>
+            <input type="text" id="location" name="Location" required />
+
+            <button type="submit">Send Request</button>
+        </form>
+    </section>
 
     <footer>
-        <p>© 2025 Fundsgoat Approval Services</p>
+        <p>© 2025 Fundsgoat Approval Services. All rights reserved.</p>
     </footer>
+
+<!-- Pop-up Modal -->
+<div id="popup-modal">
+  <div class="popup-content">
+    <h3>Need Help Getting Approved?</h3>
+    <p>We remove evictions, fix credit, and provide Snappt-approved documents.</p>
+    <button onclick="scrollToForm()">Start Free Consultation</button>
+  </div>
+</div>
+
+<script>
+  window.onload = function () {
+    setTimeout(function () {
+      document.getElementById("popup-modal").style.display = "flex";
+    }, 3000);
+  };
+
+  function scrollToForm() {
+    document.getElementById("consultation").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("popup-modal").style.display = "none";
+  }
+</script>
+
 </body>
 </html>
