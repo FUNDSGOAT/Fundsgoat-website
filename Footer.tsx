@@ -1,12 +1,7 @@
-import Footer from "@/components/Footer";
-
-function Index() {
+export default function Footer() {
   return (
-    <>
-      {/* Your other sections */}
-      <Footer />
-    </>
+    <footer className="bg-gray-900 text-white text-center py-6 mt-12">
+      <p>© 2025 FundsGoat Approval Services</p>
+    </footer>
   );
 }
-
-export default Index;
